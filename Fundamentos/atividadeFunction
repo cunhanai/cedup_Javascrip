@@ -1,0 +1,20 @@
+function imprimirSoma(a,b){
+    console.log(a+b)
+}
+
+function imprimirSubtracao(a,b){
+    console.log(a-b)
+}
+
+function imprimirMultiplicacao(a,b){
+    console.log(a*b)
+}
+
+function imprimirDivisao(a,b){
+    console.log(a/b)
+}
+
+imprimirSoma(2,5)
+imprimirSubtracao(2,5)
+imprimirMultiplicacao(2,5)
+imprimirDivisao(2,5)
