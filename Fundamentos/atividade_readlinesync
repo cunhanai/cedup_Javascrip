@@ -1,0 +1,31 @@
+readlineSync = require("readline-sync")
+
+var numero1 = parseFloat(readlineSync.question("Digite o primeiro numero: "))
+var numero2 = parseFloat(readlineSync.question("Digite o segundo numero: "))
+
+var result
+
+while (true){
+    var operacao = readlineSync.question("Qual a operacao? ")
+    if (operacao == "+"){
+        result = numero1 + numero2
+        break
+    }
+    else if (operacao == "-"){
+        result = numero1 - numero2
+        break
+    }
+    else if (operacao == "*"){
+        result = numero1 * numero2
+        break
+    }
+    else if (operacao == "/"){
+        result = numero1 / numero2
+        break
+    }
+    else{
+        console.log("Opcao invalida! Digite novamente.")
+    }
+}
+
+console.log(`Resultado: ${result}`)
